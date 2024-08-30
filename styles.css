@@ -36,7 +36,6 @@ body {
     max-width: 700px;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
     animation: fadeInUp 1.5s ease-out;
 }
