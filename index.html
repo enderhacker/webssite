@@ -1,64 +1,599 @@
-<!doctypehtml>
-	<html lang=en>
-		<meta data-n-head=ssr charset=utf-8>
-		<meta data-n-head=ssr content="width=device-width,initial-scale=1" name=viewport>
-		<meta data-n-head=ssr content="Proof bot, token gen, neptune mail, vouches space, and multipurpose bots. Ready to boost your server? Neptune discord services!" name=description data-hid=description>
-		<meta data-n-head=ssr content="Proof bot, token gen neptune mail, vouches space, and multipurpose bots. Ready to boost your server? Neptune discord services!" name=og:description data-hid=og:description>
-		<meta data-n-head=ssr content="Proof bot, token gen neptune mail, vouches space, and multipurpose bots. Ready to boost your server? Neptune discord services!" name=title data-hid=title>
-		<meta data-n-head=ssr content="Proof bot, token gen neptune mail, vouches space, and multipurpose bots. Ready to boost your server? Neptune discord services!" name=og:title data-hid=og:title>
-		<meta data-n-head=ssr content="Neptune discord" name=og:site_name data-hid=og:site_name>
-		<meta data-n-head=ssr content=#26d7e0 name=theme-color data-hid=theme-color>
-		<meta data-n-head=ssr content="Proof bot, token gen and multipurpose bots. Ready to boost your server? Neptune discord services! Neptune mail, vouches space, vouch bot" name=keywords data-hid=keywords>
-		<meta data-n-head=ssr content=NotHouse name=author data-hid=author>
-		<meta data-n-head=ssr content="index, follow" name=robots data-hid=robots>
-		<link href=https://cdn-icons-png.flaticon.com/512/3590/3590275.png rel=icon type=image/png>
-		<title>Neptune Discord - Neptune Proofs & Mail - Proof Bot</title>
-		<!DOCTYPE html>
-		<html lang="en">
-			<head>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>Neptune Proofs</title>
-				<link rel="stylesheet" href="styles.css">
-			</head>
-			<body>
-				<div id="particles-js"></div>
-				<div class="container">
-					<div class="hero-section">
-						<div class="hero-content">
-							<h1 class="title">Neptune Proofs</h1>
-							<p class="subtitle">The best Discord community for owners and Discord sellers!</p>
-							<div class="buttons">
-								<button class="Dashboard" onclick="location.href='/'">Proofs Dashboard</button>
-								<button class="Join-Now" onclick="location.href='https://discord.gg/neptuneproofs'">Discord Server</button>
-								<button class="Neptune-Mail" onclick="location.href='https://mail.neptunediscord.xyz'">Neptune Mail</button>
-								<button class="Neptune-Mail" onclick="location.href='https://vouches.space'">Vouches Space</button>
-							</div>
-						</div>
-					</div>
-					<div class="offer-section">
-						<h2 class="offer-title">What We Offer</h2>
-						<div class="offer-boxes">
-							<div class="offer-box" id="offer1">
-								<h3>Proof Bot</h3>
-								<p>Generate image proofs with ease. Over 100 different commands and 250,000 proofs made so far.</p>
-							</div>
-							<div class="offer-box" id="offer2">
-								<h3>Active Community</h3>
-								<p>Join our community known by over 10.000 users. Explore our marketplace and connect for A4A and D4D.</p>
-							</div>
-							<div class="offer-box" id="offer3">
-								<h3>Neptune Mail</h3>
-								<p>Create multiple email addresses effortlessly and receive emails in multiple inboxes. One click setup, for free.</p>
-							</div>
-							<div class="offer-box" id="offer4">
-								<h3>Vouches.Space</h3>
-								<p>Manage reputation effortlessly. Build your image or check others' reputation. Best discord reviews platform.</p>
-							</div>
-						</div>
-					</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" data-n-head="ssr">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" data-n-head="ssr">
+    <title data-n-head="ssr">Neptune Discord - Premium Discord Services, Bots, and Tools</title>
+    <meta name="description" content="Elevate your Discord experience with Neptune Discord's premium services, bots (including Proof Bot), and tools. Explore our Proofs Discord Server, Neptune Mail, Neptune Auths, and Vouches Space. Custom development and blockchain solutions available." data-n-head="ssr">
+    <meta name="keywords" content="Discord services, Discord bots, Proof Bot, Discord tools, Neptune Discord, Proofs Discord Server, Neptune Mail, Neptune Auths, Vouches Space, NotHouse, blockchain, custom development, premium Discord solutions" data-n-head="ssr">
+    <meta name="author" content="NotHouse - Neptune Discord" data-n-head="ssr">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3590/3590275.png" type="image/png" data-n-head="ssr">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Neptune Discord - Premium Discord Services, Bots, and Tools" data-n-head="ssr">
+    <meta property="og:description" content="Elevate your Discord experience with Neptune Discord's premium services, including bots like Proof Bot, custom development, and blockchain solutions." data-n-head="ssr">
+    <meta property="og:image" content="https://cdn-icons-png.flaticon.com/512/3590/3590275.png" data-n-head="ssr">
+    <meta property="og:url" content="https://yourwebsite.com" data-n-head="ssr">
+    <meta property="og:type" content="website" data-n-head="ssr">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" data-n-head="ssr">
+    <meta name="twitter:title" content="Neptune Discord - Premium Discord Services, Bots, and Tools" data-n-head="ssr">
+    <meta name="twitter:description" content="Discover Neptune Discord's innovative services for Discord, including Proof Bot, custom bot development, and blockchain integration." data-n-head="ssr">
+    <meta name="twitter:image" content="https://cdn-icons-png.flaticon.com/512/3590/3590275.png" data-n-head="ssr">
+    <meta name="twitter:creator" content="@NotHouse" data-n-head="ssr">
+	<style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+        :root {
+            --bg-color: #050709;
+            --text-color: #ffffff;
+            --accent-color: #7289da;
+            --card-bg: rgba(30, 33, 36, 0.8);
+            --hover-color: #2c2f33;
+            --gradient-start: #3a6186;
+            --gradient-end: #89253e;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+        
+        .background-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.01;
+            background-image: 
+                linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+                linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+                linear-gradient(30deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+                linear-gradient(150deg, #ffffff 12%, transparent 12.5%, transparent 87%, #ffffff 87.5%, #ffffff),
+                linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77),
+                linear-gradient(60deg, #ffffff77 25%, transparent 25.5%, transparent 75%, #ffffff77 75%, #ffffff77);
+            background-size: 80px 140px;
+            background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+            animation: moveBackground 60s linear infinite;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0 0, 0 0, 40px 70px, 40px 70px, 0 0, 40px 70px;
+            }
+            100% {
+                background-position: 80px 140px, 80px 140px, 120px 210px, 120px 210px, 80px 140px, 120px 210px;
+            }
+        }
+        
+        .blur-pattern {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(114, 137, 218, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(137, 37, 62, 0.15) 0%, transparent 50%);
+            filter: blur(100px);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+            position: relative;
+        }
+        
+        header {
+            padding: 1rem 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background-color: rgba(5, 7, 9, 0.9);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .logo img {
+            width: 40px;
+            height: 40px;
+            filter: drop-shadow(0 0 5px var(--accent-color));
+        }
+        
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, var(--accent-color), #a3b8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 10px rgba(114, 137, 218, 0.5);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style-type: none;
+            gap: 1.5rem;
+        }
+        
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+        
+        nav a::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -5px;
+            left: 0;
+            background-color: var(--accent-color);
+            transition: width 0.3s ease;
+        }
+        
+        nav a:hover::after {
+            width: 100%;
+        }
+        
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-color);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        main {
+            padding-top: 5rem;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 1rem;
+            background: linear-gradient(135deg, var(--gradient-start), var(--gradient-end));
+            border-radius: 20px;
+            margin-bottom: 3rem;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 20px rgba(114, 137, 218, 0.3);
+        }
+        
+        .hero-logo {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 2rem;
+            filter: drop-shadow(0 0 10px rgba(255,255,255,0.5));
+            animation: pulse 2s infinite alternate;
+        }
+        
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.05);
+            }
+        }
+        
+        .hero h2 {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent-color), #a3b8ff);
+            color: var(--text-color);
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: var(--accent-color);
+        }
+        
+        .services, .features {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            justify-items: center;
+			justify-content: center;
+        }
+        
+        .service-card, .feature {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            width: 100%;
+            max-width: 300px;
+            flex: 1 1 250px;
+        }
+        
+        .service-card:hover, .feature:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .service-card h3, .feature h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--accent-color);
+        }
+        
+        .service-card p, .feature p {
+            margin-bottom: 1rem;
+            font-size: 0.9rem;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, var(--accent-color), #a3b8ff);
+            color: var(--text-color);
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        
+        .feature i {
+            font-size: 2.5rem;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+        }
+        
+        .about {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 3rem;
+            margin-bottom: 3rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 20px rgba(114, 137, 218, 0.2);
+        }
+        
+        .about h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(45deg, var(--accent-color), #a3b8ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+        
+        .owner-name {
+            font-weight: 700;
+            color: var(--accent-color);
+        }
+        
+        .testimonials {
+            margin-bottom: 3rem;
+        }
+        
+        .testimonial {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 15px rgba(114, 137, 218, 0.1);
+        }
+        
+        .testimonial p {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .testimonial-author {
+            font-weight: 600;
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            nav {
+                display: none;
+                width: 100%;
+            }
+            
+            nav.active {
+                display: block;
+            }
+            
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+                padding: 1rem 0;
+            }
+            
+            nav li {
+                margin: 0.5rem 0;
+            }
+            
+            .nav-toggle {
+                display: block;
+                position: absolute;
+                top: 1rem;
+                right: 1rem;
+            }
+            
+            .hero h2 {
+                font-size: 2.5rem;
+            }
+            
+            .services, .features {
+                grid-template-columns: 1fr;
+            }
+            
+            .service-card, .feature {
+                max-width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="background-pattern"></div>
+    <div class="blur-pattern"></div>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="https://cdn-icons-png.flaticon.com/512/3590/3590275.png" alt="Neptune Discord Logo">
+                <h1>Neptune Discord</h1>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <div class="container">
+            <section id="home" class="hero">
+                <img src="https://cdn-icons-png.flaticon.com/512/3590/3590275.png" alt="Neptune Discord Logo" class="hero-logo">
+                <h2>Neptune Discord</h2>
+                <p>Elevate your Discord experience with our premium services, bots, and tools. From Proof Bot to custom development, we're here to transform your server into a thriving community.</p>
+                <a href="#services" class="cta-button">Discover Our Solutions</a>
+            </section>
+            
+            <section id="services">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services">
+                    <div class="service-card">
+                        <h3>Proofs Discord Server</h3>
+                        <p>Join our server for fake images and Proof Bot integration. Perfect for pranks and fun!</p>
+                        <a href="https://discord.gg/proofs" target="_blank" class="btn">Join Server</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Neptune Mail</h3>
+                        <p>Get free, secure mail alts. Ideal for managing multiple accounts privately.</p>
+                        <a href="https://mail.neptunediscord.xyz" target="_blank" class="btn">Get Mail</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Neptune Auths</h3>
+                        <p>Access our free, secure authentication service for your Discord projects.</p>
+                        <a href="https://auth.neptunediscord.xyz" target="_blank" class="btn">Try Auths</a>
+                    </div>
+                    <div class="service-card">
+                        <h3>Vouches Space</h3>
+                        <p>Explore our free vouch and review database. Build trust in the community.</p>
+                        <a href="https://vouches.space" target="_blank" class="btn">View Vouches</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="features">
+                <h2 class="section-title">Key Features</h2>
+                <div class="features">
+                    <div class="feature">
+                        <i class="fas fa-robot"></i>
+                        <h3>Custom Bot Development</h3>
+                        <p>Tailor-made apps & services to suit your unique needs and enhance your experience.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-link"></i>
+                        <h3>Blockchain Integration</h3>
+                        <p>Seamlessly integrate blockchain technology into your Discord projects for enhanced functionality and security.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-headset"></i>
+                        <h3>24/7 Support</h3>
+                        <p>Our dedicated team is always available to assist you with any questions or issues you may encounter.</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-sync-alt"></i>
+                        <h3>Regular Updates</h3>
+                        <p>Stay ahead with frequent updates and new features added to our services and tools.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about" class="about">
+				<h2>About The Owner <span class="owner-name">NotHouse</span></h2>
+				<p>Hey! I'm <span class="owner-name">NotHouse</span>, the brain behind Neptune Discord. My coding journey started with JavaScript and Python, and pretty quickly, I got hooked on building cool stuff for the Discord community.</p>
+				<p>I've been working on bots and Discord integrations for over 5 years now, fine-tuning my skills to create tools that really level up the Discord experience. Whether it's the Proof Bot that makes hilarious fake images for fun or secure authentication and blockchain tools, I'm all about pushing the limits of what's possible in Discord and crypto projects.</p>
+				<p>I'm not just about Discord, though—I'm also big into blockchain tech and always looking for ways to mix it with Discord apps. This combo of skills lets me build stuff that's not just useful, but also cutting-edge and secure.</p>
+				<p>I'm a big believer in community and working together. So, if you've got an idea for a custom bot, a blockchain integration, or anything else Discord-related, I'm up for the challenge. Let's chat on Discord and bring your ideas to life!</p>
+			</section>
+			
+            <section id="testimonials" class="testimonials">
+                <h2 class="section-title">What Our Users Say</h2>
+                <div class="testimonial">
+					<p>"Neptune Discord's Proof Bot has taken our server's engagement to a whole new level. The fake images are hilarious, and they've really helped bring our community closer!"</p>
+					<span class="testimonial-author">- Alex, Server Owner</span>
 				</div>
-				<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-				<script src="particles-config.js"></script>
-			</body>
-		</html>
+				<div class="testimonial">
+					<p>"Neptune Mail is a total game-changer for juggling multiple accounts. It's super secure, easy to use, and I honestly can't imagine managing things without it now."</p>
+					<span class="testimonial-author">- Sarah, Content Creator</span>
+					</div>
+				<div class="testimonial">
+					<p>"NotHouse's custom bot development went way beyond what we expected. The crypto bot they built is fantastic, and we haven’t had a single issue so far!"</p>
+					<span class="testimonial-author">- Mike, Community Manager</span>
+				</div>
+            </section>
+        </div>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Neptune Discord. All rights reserved. Created with ❤️ by NotHouse.</p>
+        </div>
+    </footer>
+    
+    <script>
+        // Smooth scrolling for all anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                if (targetElement) {
+                    const headerOffset = 80;
+                    const elementPosition = targetElement.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+        
+        // Add animation to service cards, features, and testimonials on scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+        
+        document.querySelectorAll('.service-card, .feature, .testimonial').forEach((element) => {
+            element.style.opacity = 0;
+            element.style.transform = 'translateY(20px)';
+            element.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+            observer.observe(element);
+        });
+        
+        // Add glowing effect to buttons on hover
+        const buttons = document.querySelectorAll('.btn, .cta-button');
+        buttons.forEach(button => {
+            button.addEventListener('mouseover', () => {
+                button.style.boxShadow = '0 0 15px rgba(114, 137, 218, 0.8)';
+            });
+            button.addEventListener('mouseout', () => {
+                button.style.boxShadow = '';
+            });
+        });
+        
+        // Toggle mobile navigation
+        const navToggle = document.querySelector('.nav-toggle');
+        const nav = document.querySelector('nav');
+        
+        navToggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+        });
+        
+        // Close mobile navigation when a link is clicked
+        document.querySelectorAll('nav a').forEach(link => {
+            link.addEventListener('click', () => {
+                nav.classList.remove('active');
+            });
+        });
+    </script>
+</body>
+</html>
